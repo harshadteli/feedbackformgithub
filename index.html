@@ -158,26 +158,72 @@
 </head>
 <body>
     <div class="container">
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-             <h3>Your Feedback,Our Improvement</h3>
+        <form action="https://api.web3forms.com/submit" method="POST" id="feedbackForm">
+            <div class="form-header">
+                <h3>Your Feedback, Our Improvement</h3>
+                <p>Digital Transformation: Devish Ingredients B2B E-commerce</p>
+            </div>
+
             <input type="hidden" name="access_key" value="00192083-e36d-43de-9261-0002bf706a4e">
             <input type="hidden" name="subject" value="FeedBack Form Submisson">
             <input type="hidden" name="This Form is coming from individual project Feedback on Github.">
-            <input type="text" name="Name:-" placeholder="Your Name" required>
-            <input type="email" name="Email:-" placeholder="Email id" required>
-            <input type="Phone No" name="Phone No:" placeholder="Phone No" required>
-            <input type="text" name="Project Name:-" placeholder="Enter Project Name" required>
-            <textarea name="FeedBack" rows="4" placeholder="Enter Your Feedback" required></textarea>
-            <button type="submit">Submit<img src="./assets/images/arrow.png" alt="E404"></button><br>
-            <button type="reset" id="play">Reset</button>
+
+            <div class="input-group">
+                <label class="input-label" for="name">Full Name</label>
+                <input type="text" id="name" name="Name:-" placeholder="Your Name" required>
+            </div>
+
+            <div class="input-group">
+                <label class="input-label" for="email">Email ID</label>
+                <input type="email" id="email" name="Email:-" placeholder="Email id" required>
+            </div>
+
+            <div class="input-group">
+                <label class="input-label" for="phone">Phone Number</label>
+                <input type="text" id="phone" name="Phone No:" placeholder="Phone No" required>
+            </div>
+
+            <div class="input-group">
+                <label class="input-label" for="projectName">Project Name</label>
+                <input type="text" id="projectName" name="Project Name:-" value="Devish Ingredients B2B" readonly>
+            </div>
+
+            <div class="input-group">
+                <label class="input-label" for="feedback">Your FeedBack</label>
+                <textarea id="feedback" name="FeedBack" rows="4" placeholder="Enter Your Feedback" required></textarea>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit">
+                    Submit
+                    <img src="./assets/images/arrow.png" alt="arrow">
+                </button>
+                <button type="reset" id="resetBtn">Reset</button>
+            </div>
+
+            <!-- <div class="dev-credits">
+                <p><span class="label">Developed By</span></p>
+                <div class="dev-list">
+                    <span class="dev-item"><span class="name">Swyam Tirvir</span>: <span class="role">Frontend
+                            Developer</span></span>
+                    <span class="separator">|</span>
+                    <span class="dev-item"><span class="name">Harshad Teli</span>: <span class="role">Full Stack
+                            Developer</span></span>
+                </div>
+            </div> -->
+
+            <div class="footer-text vibrant-footer">
+                <marquee behavior="scroll" direction="left" scrollamount="6">
+                    <span class="vibrant-text">&copy; 2026 Devish Ingredients B2B Digital Transformation | All Rights
+                        Reserved | Powered by &nbsp; HarshTech Organization</span>
+                </marquee>
+            </div>
         </form>
-       
     </div>
-    
-   <center><img src="./assets/images/feedback.gif" alt="E404"</center>
-   <script src="./assets/Javascript/script.js"></script>
-   <center><h4>Powered by HarshTech Organization</h4></center><br><br>
+
+    <script src="./assets/Javascript/script.js"></script>
    
 </body>
 
 </html>
+
